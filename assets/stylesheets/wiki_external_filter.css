@@ -1,0 +1,53 @@
+.externalfilterinline{
+  position: relative;
+  margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.wiki p:first-child .externalfilterinline{
+	margin-top: 2em;
+}
+
+.externalfilterblock img{
+	display: block;
+}
+
+.externalfilterblock .wiki_page{
+	font-size: 80%;
+	border-top: 1px solid #ccc;
+	color: #aaa;
+}
+
+.externalfilterblock .wiki_page a{
+	color: #999;
+}
+
+.flowplayer-video{
+	width: inherit !important;
+}
+
+a.flowplayer-video img{
+	position: absolute !important;
+	left: 48% !important;
+	top: 48% !important;
+}
+
+.svgobject{
+	display: none;
+}
+
+.ie .svgobject{
+	display: inline;
+}
+
+.ie img.svg{
+	display: none;
+}
+
+.gecko .svgobject{
+	display: inline;
+}
+
+.gecko img.svg{
+	display: none;
+}

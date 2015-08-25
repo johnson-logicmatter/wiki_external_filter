@@ -1,0 +1,10 @@
+<img class='svg <%= render_type == 'inline' ? "externalfilterinline" : "" %>' src='<%= url_for(:controller => 'wiki_external_filter', :action => 'filter', :macro => macro, :name => name, :index => 0) %>' alt='<%= h source %>' />
+<object class='svgobject <%= render_type == 'inline' ? "externalfilterinline" : "" %>' name='<%= name %>' data='<%= url_for(:controller => 'wiki_external_filter', :action => 'filter', :macro => macro, :name => name, :index => 0) %>' type='<%= content_types[0] %>' title="<%= h source %>">
+<%
+  if content.size > 1
+%>
+    <img<%= raw render_type == 'inline' ? " class='externalfilterinline'" : "" %> src='<%= url_for(:controller => 'wiki_external_filter', :action => 'filter', :macro => macro, :name => name, :index => 1) %>' alt='<%= h source %>' />
+<%
+  end
+%>
+</object>
